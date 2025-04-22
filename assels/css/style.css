@@ -8,4 +8,73 @@ html {
 /* khôi phục có cỡ chữ mặc định them rem */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* common */
+a {
+  text-decoration: none;
+}
+
+/* header */
+.header .body {
+  display: flex;
+}
+
+/* main-content */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* nav */
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor; /* de dat hieu ung ko giat */
+}
+
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+
+/* btn */
+.btn {
+  display: inline-block; /* de padding vao */
+  min-width: 118px; /* chieu rong toi thieu cua btn */
+  padding: 0 16px; /* tren duoi 0 trai phai 16px khoang dem*/
+  line-height: 50px; /*chieu cao cua btn */
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background: #171100;
+  border-radius: 24.5px;
 }
