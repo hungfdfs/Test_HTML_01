@@ -17,8 +17,20 @@ a {
 }
 
 /* header */
+.header {
+  background: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
+}
+
 .header .body {
   display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
 }
 
 /* main-content */
@@ -77,4 +89,8 @@ a {
   color: #ffffff;
   background: #171100;
   border-radius: 24.5px;
+}
+
+.header .action {
+  margin-left: 49px; /*70px - 21px*/
 }
