@@ -30,6 +30,23 @@ a {
   font-weight: 700;
 }
 
+.line-clamp {
+  /* dau ba cham 1 dong */
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  /* dai qua khong co khoang trang */
+  word-break: break-all;
+}
+
 /*=============== header ==============*/
 .header {
   background: #fffcf4;
@@ -334,6 +351,7 @@ a {
 }
 
 .popular .course-item {
+  flex: 1;
   border: 1px solid #e2dfda;
   border-radius: 12px;
   background: #ffffff;
